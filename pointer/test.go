@@ -15,4 +15,6 @@ func main() {
 	if !*n {
 		fmt.Println()
 	}
+
+	//这个和os.args区别的是只会处理截断后的参数
 }

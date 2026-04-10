@@ -1,20 +1,13 @@
 package draft
 
-type Point struct {
-	x, y int
-}
+type Values map[string][]string
 
-type Circle struct {
-	Point
-	Radius int
+func (v Values) Get(key string) string {
+	if vs := v[key]; len(vs) > 0 {
+		return vs[0]
+	}
+	return ""
 }
-
-type Wheel struct {
-	Circle
-	Spokes int
-}
-
-var w Wheel
 
 //w.Radius=5
 //这样可以直接用，就是一种匿名

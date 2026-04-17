@@ -1,8 +1,10 @@
 package main
 
-import (
-	"github.com/gin-gonic/gin"
-)
+// import (
+// 	"net/http"
+
+// 	"github.com/gin-gonic/gin"
+// )
 
 // func main() {
 // 	r := gin.Default()
@@ -22,7 +24,14 @@ import (
 // 	r.Run(":8080")
 // }
 
-func main() {
-	r := gin.Default()
+// func main() {
+// 	r := gin.Default()
+// 	r.GET("/user/:name/*action", func(c *gin.Context) {
+// 		firstname:=c.DefaultQuery("firstname","guest")
+// 		lastname:=c.Query("lastname")
+// 		c.String(http.StatusOK,"Hello %s %s",firstname,lastname)
 
-}
+// 	})
+
+// 	r.Run(":8080")
+// }

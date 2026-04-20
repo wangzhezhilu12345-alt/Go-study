@@ -2,7 +2,10 @@ module its_mygo
 
 go 1.26.1
 
-require github.com/gin-gonic/gin v1.12.0
+require (
+	github.com/gin-gonic/gin v1.12.0
+	golang.org/x/sync v0.19.0
+)
 
 require (
 	github.com/bytedance/gopkg v0.1.3 // indirect
